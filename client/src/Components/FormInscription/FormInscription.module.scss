@@ -1,0 +1,152 @@
+.form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        label {
+            font-size: 1.2vw;
+            margin-bottom: 5px;
+        }
+        input {
+            padding:3px 10px;
+            font-size: 1.1vw;
+            border-radius: 0.5vw;
+            border: solid 1px var(--textColor);
+            transition: 0.2s;
+
+            &:focus{
+                background: var(--textColorBlue);
+            }
+        }
+        p {
+            color: var(--textError);
+            font-size: 0.8vw;
+            padding: 2px;
+        }
+    }
+    .checkbox {
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            label {
+                font-size: 0.9vw;
+                margin-bottom: 0px;
+                a {
+                    color: var(--textColor);
+                    transition: 0.3s;
+                    &:hover {
+                        color: var(--textColorBlue);
+                    }
+                }
+            }
+            input {
+                width: 1.1vw;
+                height: 1.1vw;
+                margin-right: 1vw;
+            }
+        }
+    }
+    > input {
+        width: fit-content;
+        font-size: 1.2vw;
+        color: var(--textColor);
+        background: rgba(255, 255, 255, 0);
+        border: solid 2px var(--bgClair);
+        padding:0.5vw 3vw;
+        border-radius: 0.75vw;
+        align-self: center;
+        transition: 0.3s;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        cursor: pointer;
+        &:hover{
+            color: var(--textColorBlue);
+            border: solid 2px var(--textColorBlue)
+        }
+    }
+    > p {
+        font-size: 0.8vw;
+        > a {
+            color: var(--textColor);
+            transition: 0.3s;
+            &:hover {
+                color: var(--textColorBlue);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .form {
+        width: 80vw;
+        > div {
+            label {
+                font-size: 2vw;
+            }
+            input {
+                font-size: 1.8vw;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+        }
+        .checkbox {
+            div {
+                label {
+                    font-size: 1.8vw;
+                }
+                input {
+                    width: 2vw;
+                    height: 2vw;
+                    margin-right: 2vw;
+                }
+            }
+
+        }
+        > input {
+            font-size: 2vw;
+        }
+        > p:last-child {
+            font-size: 1.5vw;
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .form {
+        width: 98vw;
+        > div {
+            label {
+                font-size: 4vw;
+            }
+            input {
+                font-size: 3.6vw;
+            }
+            p {
+                font-size: 3vw;
+            }
+        }
+        .checkbox {
+            div {
+                label {
+                    font-size: 3.6vw;
+                }
+                input {
+                    width: 4vw;
+                    height: 4vw;
+                    margin-right: 4vw;
+                }
+            }
+
+        }
+        > input {
+            font-size: 4vw;
+        }
+        > p:last-child {
+            font-size: 3vw;
+        }
+    }
+}

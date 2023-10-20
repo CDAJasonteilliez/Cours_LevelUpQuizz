@@ -1,0 +1,159 @@
+.nav {
+    background-color: var(--bgClair);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5vw;
+    div:first-child{
+        font-size: 0px;
+        a {
+            font-size: 0px;
+        }
+    }
+    img {
+        padding: 5px;
+        width: 7vw;
+    }
+    a {
+        color: var(--textColor);
+        text-decoration: none;
+        font-size: 1.5vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding:0px 1.5vw;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+    }
+    div {
+        display: flex;
+        align-items: center;
+
+        button {
+            background: rgba(0, 0, 0, 0);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 1.5vw;
+            padding:0px 1.5vw;
+            border: none;
+            color: var(--textColor);
+            transition: 0.2s;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+    .menuBurger {
+        display: none;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 3vw;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        div {
+            position: relative;
+            width: 8.4vw;
+            height: 1.2vw;
+            background: var(--textColor);
+            border-radius: 1vw;
+            transition: 0.3s;
+            &::before {
+                content: "";
+                width: 8.4vw;
+                height: 1.2vw;
+                top: -3vw;
+                left:0vw;
+                position: absolute;
+                background: var(--textColor);
+                border-radius: 1vw;
+                transform-origin: left;
+                transition: 0.3s;
+            }
+            &::after {
+                content: "";
+                width: 8.4vw;
+                height: 1.2vw;
+                top: 3vw;
+                left:0vw;
+                position: absolute;
+                background: var(--textColor);
+                border-radius: 1vw;
+                transform-origin: left;
+                transition: 0.3s;
+            }
+        }
+        &.active{
+            div {
+                background: rgba(0, 0, 0, 0) ;
+                &::before {
+                    transform: rotate(45deg);
+                    left:1.2vw;
+                }
+                &::after{
+                    transform: rotate(-45deg);
+                    left:1.2vw;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .nav {
+        padding: 0px 0vw;
+        img {
+            width: 10vw;
+        }
+        a {
+            font-size: 2.5vw;
+            padding:0px 1.5vw;
+        }
+        div {
+            button {
+                font-size: 2.5vw;
+                padding:0px 1.5vw;
+            }
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .nav{
+        img {
+            width: 20vw;
+        }
+        .menuBurger {
+            display:flex;
+        }
+        .menu {
+            margin:0px;
+            position: absolute;
+            flex-direction: column;
+            width: 100vw;
+            top:14vw;
+            padding:0vw;
+            border-top: solid 0px var(--textColor);
+            background: var(--bgClair);
+            height: auto;
+            transition: 0.5s;
+            a,
+            button {
+                transition: 0.5s;
+                display: block;
+                text-align: center;
+                font-size: 0vw;
+                width: 100%;
+            }
+            &.active {
+                border-top: solid 1px var(--textColor);
+                a,
+                button {
+                    font-size: 4vw;
+                    padding:1vw;
+                }
+            }
+        }
+    }
+}

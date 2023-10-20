@@ -1,0 +1,124 @@
+.admin {
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 0px;
+  
+    
+    button:first-child {
+        margin-right: 10px;
+    }
+    
+     button:last-child {
+        margin-left: 10px;
+    }
+    
+    
+    
+    li {
+        
+    margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.10s;
+      list-style: none;
+  
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+        
+      }
+    }
+
+  
+    button {
+    
+      margin-top: 20px;
+      padding: 3px 10px;
+      font-size: 20px;
+      border-radius: 0.5vw;
+      border: 1px solid var(--textColor);
+      transition: 0.2s;
+      background-color: transparent;
+      width: fit-content;
+      color: var(--textColor);
+      background: rgba(255, 255, 255, 0);
+      border: 2px solid var(--bgClair);
+      padding: 0.5vw 3vw;
+      border-radius: 0.75vw;
+      align-self: center;
+      transition: 0.3s;
+      margin-bottom: 20px;
+      cursor: pointer;
+  
+      &:hover {
+        color: var(--textColorBlue);
+        border: 2px solid --textColorBlue;
+      }
+    }
+
+    input {
+        margin-top: 20px;
+      padding: 3px 10px;
+      font-size: 20px;
+      border-radius: 0.5vw;
+      border: 1px solid var(--textColor);
+      transition: 0.2s;
+      background-color: transparent;
+      width: fit-content;
+      color: var(--textColor);
+      background: rgba(255, 255, 255, 0);
+      border: 2px solid var(--bgClair);
+      padding: 0.5vw 3vw;
+      border-radius: 0.75vw;
+      align-self: center;
+      transition: 0.3s;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      
+
+        &:focus{
+            background: var(--textColorBlue);
+            color: #000;
+        }
+    }
+  
+    select {
+      color: var(--textColor);
+      background-color: transparent;
+      border-radius: 0.75vw;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 3px 10px;
+      font-size: 20px;
+      border-radius: 0.5vw;
+      border: 1px solid var(--textColor);
+      transition: 0.2s;
+      background-color: transparent;
+      width: fit-content;
+      color: var(--textColor);
+      background: rgba(255, 255, 255, 0);
+      border: 2px solid var(--bgClair);
+      padding: 0.5vw 3vw;
+      border-radius: 0.75vw;
+      align-self: center;
+      transition: 0.3s;
+      margin-bottom: 40px;
+      cursor: pointer;
+
+  
+      &.active {
+        color: #000;
+      }
+
+      .choix {
+        background-color: var(--bgFonce);
+        
+        border: 1px solid var(--textColor);
+      }
+      
+    }
+  }

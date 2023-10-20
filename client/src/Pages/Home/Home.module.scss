@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--textColor);
+    padding: 50px;
+    font-weight: 400;
+    text-align: center;
+    h1 {
+        font-size: 2vw;
+        font-weight: 500;
+        margin-bottom:40px;
+        > span {
+            white-space: nowrap;
+            > span {
+                color: var(--textColorBlue);
+            }
+        }
+    }
+    > p {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .section {
+        h1 {
+            font-size: 3vw;
+        }
+        > p {
+            font-size: 1.8vw;
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .section {
+        padding: 2%;
+        h1 {
+            font-size: 6vw;
+        }
+        > p {
+            font-size: 3.6vw;
+        }
+    }
+}

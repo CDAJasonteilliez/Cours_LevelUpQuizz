@@ -1,0 +1,129 @@
+{  
+    "user": [
+        {
+            "id": "JesuisunFake",
+            "password": "azertyuiop",
+            "email": "jesuiunfake@gmail.com",
+            "rang":"1",
+            "point":"1250",
+            "bio" : "Il parait que si tu lis cette biographie. Un Celebi shiny apparaîtra"
+            
+        },
+        {
+            "id": "JesuisunAdmin",
+            "password": "poiuytreza",
+            "email": "jesuiunadmin@gmail.com",
+            "rang":"1",
+            "point":"980",
+            "bio" : "Yogi en devenir, trouvant la paix intérieure par la méditation."
+            
+        },
+        {
+            "id": "piupui",
+            "password": "azertyuiop",
+            "email": "puipui@gmail.com",
+            "rang":"0",
+            "point":"769",
+            "bio" : "Aventurier des mots, naviguant sur les mers de la poésie et de la prose."
+        },
+        {
+            "id": "Robert",
+            "password": "azertyuiop",
+            "email": "robert@gmail.com",
+            "rang":"0",
+            "point":"7465",
+            "bio" : "Aventurier des mots, naviguant sur les mers de la poésie et de la prose."
+        },
+        {
+            "id": "Bob",
+            "password": "azertyuiop",
+            "email": "Bob62@gmail.com",
+            "rang":"0",
+            "point":"665",
+            "bio" : "Rêveur cosmique, fasciné par les étoiles et les galaxies lointaines."
+        },
+        {
+            "id": "TEST1",
+            "password": "password1",
+            "email": "user1@gmail.com",
+            "rang": "0",
+            "point": "1500",
+            "bio" : "Chef cuisinier dans l'âme, créant des plats exquis avec amour."
+        },
+        {
+            "id": "TEST12",
+            "password": "password2",
+            "email": "user2@gmail.com",
+            "rang": "0",
+            "point": "2100",
+            "bio" : "Collectionneur de timbres du monde entier, voyageur en herbe."
+        },
+        {
+            "id": "TEST13",
+            "password": "password3",
+            "email": "user3@gmail.com",
+            "rang": "0",
+            "point": "1800",
+            "bio" : "Photographe amateur capturant la beauté du monde à travers son objectif."
+        },
+        {
+            "id": "TEST14",
+            "password": "password4",
+            "email": "user4@gmail.com",
+            "rang": "0",
+            "point": "3200",
+            "bio" : "Amoureux des animaux, défenseur de toutes les créatures à quatre pattes."
+        },
+        {
+            "id": "TEST15",
+            "password": "password5",
+            "email": "user5@gmail.com",
+            "rang": "0",
+            "point": "900",
+            "bio" : "Gamer invétéré, toujours en quête de la victoire ultime."
+        },
+        {
+            "id": "TEST16",
+            "password": "password6",
+            "email": "user6@gmail.com",
+            "rang": "0",
+            "point": "1400",
+            "bio" : "Artiste du week-end, créant des chefs-d'œuvre avec des pinceaux et de la couleur."
+        },
+        {
+            "id": "TEST17",
+            "password": "password7",
+            "email": "user7@gmail.com",
+            "rang": "0",
+            "point": "1700",
+            "bio" : "Mélomane passionné par la musique classique et le jazz."
+        },
+        {
+            "id": "TEST18",
+            "password": "password8",
+            "email": "user8@gmail.com",
+            "rang": "0",
+            "point": "800",
+            "bio" : "Écrivain en herbe, plongé dans un monde de mots et de rêves."
+        },
+        {
+            "id": "TEST19",
+            "password": "password9",
+            "email": "user9@gmail.com",
+            "rang": "0",
+            "point": "2200",
+            "bio" : "Amoureux de la nature, toujours à la recherche de la prochaine aventure en plein air."
+            
+        },
+        {
+            "id": "TEST110",
+            "password": "password10",
+            "email": "user10@gmail.com",
+            "rang": "0",
+            "point": "950",
+            "bio" : "Explorateur de l'univers en quête de nouvelles frontières."
+        }
+
+        
+    ]
+}

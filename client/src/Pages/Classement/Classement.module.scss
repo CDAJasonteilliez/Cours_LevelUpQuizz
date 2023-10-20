@@ -1,0 +1,84 @@
+
+
+.Classement {
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 0px;
+}
+
+.table tr:nth-child(1) {
+    background-color: #756300; /* 1er en or */
+}
+
+.table tr:nth-child(2) {
+    background-color: #7B7B7B; /* 2ème en argent */
+}
+
+.table tr:nth-child(3) {
+    background-color: #7D6038; /* 3ème en bronze (couleur bronze) */
+}
+
+h1 {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+.table {
+width: 50vw;
+border-collapse: collapse;
+border: 1px solid #fff;
+color: #fff;
+margin-bottom: 80px;
+
+
+}
+
+.table th,
+.table td {
+
+padding: 8px;
+text-align: left;
+transition: 0.10s;
+}
+
+.table th {
+background-color: #fff;
+color: #000;
+}
+
+.table tr:nth-child(even):not(:nth-child(2))  {
+background-color: #fff;
+color: #000;
+
+    &:hover {
+        background: var(--textColorBlue);
+color: #000;
+    }
+}
+
+.table tr:hover {
+background: var(--textColorBlue);
+color: #000;
+}
+
+@media screen and (max-width:1024px) {
+    .table {
+        width: 80vw;
+        
+        
+}
+}
+@media screen and (max-width:640px) {
+    .table {
+        width: 95vw;
+        
+        
+}
+
+}
+

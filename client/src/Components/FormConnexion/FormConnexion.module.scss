@@ -1,0 +1,115 @@
+.form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        label {
+            font-size: 1.2vw;
+            margin-bottom: 5px;
+        }
+        input {
+            padding:3px 10px;
+            font-size: 1.1vw;
+            border-radius: 0.5vw;
+            border: solid 1px var(--textColor);
+            transition: 0.2s;
+
+            &:focus{
+                background: var(--textColorBlue);
+            }
+        }
+        p {
+            color: var(--textError);
+            font-size: 0.9vw;
+            padding: 2px;
+        }
+    }
+    > input {
+        width: fit-content;
+        font-size: 1.2vw;
+        color: var(--textColor);
+        background: rgba(255, 255, 255, 0);
+        border: solid 2px var(--bgClair);
+        padding:0.5vw 3vw;
+        border-radius: 0.75vw;
+        align-self: center;
+        transition: 0.3s;
+        cursor: pointer;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        
+        &:hover{
+            color: var(--textColorBlue);
+            border: solid 2px var(--textColorBlue)
+        }
+    }
+    > p:last-child {
+        font-size: 0.9vw;
+        > a {
+            color: var(--textColor);
+            transition: 0.3s;
+            &:hover {
+                color: var(--textColorBlue);
+            }
+        }
+    }
+    .ErrorMessage {
+        color: var(--textError);
+        font-size: 1.2vw;
+        margin-bottom:30px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .form {
+        width: 80vw;
+        > div {
+            label {
+                font-size: 2vw;
+            }
+            input {
+                font-size: 1.8vw;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+        }
+        > input {
+            font-size: 2vw;
+        }
+        > p:last-child {
+            font-size: 1.5vw;
+        }
+        .ErrorMessage {
+            font-size: 2vw;
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .form {
+        width: 98vw;
+        > div {
+            label {
+                font-size: 4vw;
+            }
+            input {
+                font-size: 3.6vw;
+            }
+            p {
+                font-size: 3vw;
+            }
+        }
+        > input {
+            font-size: 4vw;
+        }
+        > p:last-child {
+            font-size: 3vw;
+        }
+        .ErrorMessage {
+            font-size: 4vw;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.footer {
+    margin-top: auto;
+    background-color: var(--bgClair);
+    color: var(--textColor);
+    padding:30px 1vw 5px 1vw;
+    font-size: 1vw;
+
+    > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        > div {
+            display:flex;
+            justify-content: center;
+
+            > div {
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: var(--textColor);
+                    line-height: 2vw;
+                    transition: 0.2s;
+                    &:hover {
+                        color: var(--textColorBlue);
+                    }
+                }
+            }
+        }
+
+        > div:first-child {
+            flex:2;
+            gap: 2vw;
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        > div:nth-child(2) {
+            flex:1;
+            img {
+                width: 10vw;
+                transition: 0.4s;
+                &:hover {
+                    transform: scale(0.9);
+                }
+
+            }
+        }
+        > div:last-child {
+            flex:2;
+            display: flex;
+            gap:2vw;
+            cursor: pointer;
+            i {
+                font-size: 2vw;
+                transition: 0.2s;
+                &:hover {
+                    color: var(--textColorBlue);
+                }
+            }
+        }
+    }
+
+    > div:last-child {
+        margin-top: 30px;
+        font-size: 1vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .footer {
+        font-size: 1.5vw;
+        > div:first-child {
+            > div {
+                > div {
+                    a {
+                        line-height: 3vw;
+                    }
+                }
+            }
+            > div:first-child {
+                gap: 5vw;
+            }
+            > div:nth-child(2) {
+                flex:1;
+                img {
+                    width: 15vw;
+                }
+            }
+            > div:last-child {
+                i {
+                    font-size: 4vw;
+                }
+            }
+        }
+
+        > div:last-child {
+            font-size: 1.5vw;
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    .footer {
+        font-size: 3vw;
+        > div:first-child {
+            flex-direction: column;
+
+            > div {
+                > div {
+                    a {
+                        line-height: 6vw;
+                    }
+                }
+            }
+            > div:first-child {
+                flex-direction: column;
+                gap:0vw;
+            }
+            > div:nth-child(2) {
+                margin: 50px 0px;
+                img {
+                    width: 30vw;
+                }
+            }
+            > div:last-child {
+                i {
+                    font-size: 7vw;
+                }
+            }
+        }
+
+        > div:last-child {
+            margin-top: 50px;
+            font-size: 2.5vw;
+        }
+    }
+}

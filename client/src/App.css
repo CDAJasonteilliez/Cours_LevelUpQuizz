@@ -1,0 +1,13 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+:root {
+    --bgClair: rgb(117,137,191);
+    --bgFonce: rgb(148,168,208);
+    --textColorBlue: #80e5ff;
+    --textColor: #28375f;
+    --textError: #D71B23;
+}

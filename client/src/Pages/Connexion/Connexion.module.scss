@@ -1,0 +1,28 @@
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--textColor);
+    padding: 50px;
+    font-weight: 400;
+    h1 {
+        font-size: 2vw;
+        font-weight: 500;
+        margin-bottom:40px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .section {
+        h1 {
+            font-size: 3vw;
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .section {
+        h1 {
+            font-size: 6vw;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.profil {
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 0px;
+    gap : 20px;
+
+    h1 {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+ 
+    .bio {
+        width: 16em;
+        height: 5em;
+    }
+
+    input {
+        padding:3px 10px;
+        font-size: 1.1vw;
+        border-radius: 0.5vw;
+        border: solid 1px var(--textColor);
+        transition: 0.2s;
+
+        &:focus{
+            background: var(--textColorBlue);
+        }
+    }
+
+    button {
+        padding:3px 10px;
+        font-size: 20px;
+        border-radius: 0.5vw;
+        border: solid 1px var(--textColor);
+        transition: 0.2s;
+        background-color: transparent;
+        width: fit-content;
+        
+        color: var(--textColor);
+        background: rgba(255, 255, 255, 0);
+        border: solid 2px var(--bgClair);
+        padding:0.5vw 3vw;
+        border-radius: 0.75vw;
+        align-self: center;
+        transition: 0.3s;
+        margin-bottom: 40px;
+
+        cursor: pointer;
+        &:hover{
+            color: var(--textColorBlue);
+            border: solid 2px var(--textColorBlue)
+        }
+    }
+}

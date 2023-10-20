@@ -1,0 +1,95 @@
+.questionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+
+}
+
+.buttonSelect {
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+    margin-top: 2%;
+}
+
+.titleCategorie {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.buttonQuestion {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid #80e5ff;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.buttonQuestion ::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #203940;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+.buttonQuestion:hover {
+    color: white;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+    scale: 1;
+}
+
+
+.titleQuestion {
+    margin-top: 2%;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.questionNumero {
+    font-size: 35px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .buttonQuestion {
+        margin-bottom: 5px;
+        font-size: 15px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .buttonSelect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .titleQuestion {
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+}
